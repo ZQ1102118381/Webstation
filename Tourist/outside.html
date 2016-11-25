@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>国内美景</title>
+	   <link href="css/demo.css" rel="stylesheet" style="text/css" />
+	</head>
+	<script>
+		var arr=new Array();
+	   arr[0]="img/o7.jpg";
+       arr[1]="img/o1.jpg";//放图片地址
+       arr[2]="img/o2.jpg";
+       arr[3]="img/o3.jpg";
+       arr[4]="img/o4.jpg";
+       arr[5]="img/o5.jpg";
+       arr[6]="img/o6.jpg";
+       
+       var num=0;
+       
+       setInterval(turnpic,4000); //每隔4秒转换图片
+       function turnpic(){
+       idsrc=document.getElementById("page2_img");
+          if(num==arr.length-1)
+               num=0;
+          else
+               num+=1;
+         idsrc.src=arr[num];
+}
+	</script>
+	
+	
+<body>
+<div id="container">
+	<div id="page1">
+	 <div id="page1-banner">
+	   <div id="banner-left">
+	     <div id="logo"><h1>About TRAVEL</h1></div>
+	     </div>
+	     <div id="banner-right">
+	     	<ul>
+	         <li><a href="main.html">Home</a></li>
+	         <li><a href="inside.html">国内美景</a></li>
+	         <li><a href="outside.html" style="color:#333">国外风光</a></li>
+	         <li><a href="food.html">食物</a></li>
+	         <li><a href="suggestion.html">个人推荐</a></li>
+	     	</ul>
+	     </div>
+	   </div>
+	</div>
+	
+	<!--
+    	page2
+    -->
+	<div id="page2-left">
+	  <div id="page2-lm">
+		<ul>
+			<li><a href="#page2-right1">意大利</a></li>
+			<li><a href="#page2-right2">浪漫法国</a></li>
+			<li><a href="#page2-right3">英格兰</a></li>
+			<li><a href="#page2-right4">发达美国</a></li>
+		</ul>
+		</div>
+		
+		<div id="page2-rm">
+			<h2 align="center">国外热门推荐</h2>
+			<ul>
+			   <li>
+			   	<ul>马尔代夫
+			   	  <li><a href="http://baike.baidu.com/link?url=cgpFLM-xmVe6AKp6V71Nziu7CvDSSviXZoNrK-MmH25wowqCf1apul7PWxOK1c-Kq1NhjLkVUg52cXz6eDu9F1_wbog5XIh63zpNWZ-HF1Q31m4rzTDhUnwzfQIxWWs-">位于南亚，是印度洋上的一个岛国，也是世界上最大的珊瑚岛国,亚洲最小的国家,
+			   	  	拥有丰富的海洋资源，有各种热带鱼类及海龟、玳瑁和珊瑚、贝壳之类的海产品，马尔代夫是非常著名的度假
+			   	  海岛，在国内一直享有较高的名气，夏天的的海滩，日光浴，沙滩，比基尼，一切都不能再美好。</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：5000元起</li>
+			   	</ul>
+			   </li>
+			   
+			    <li>
+			   	<ul>瑰丽埃及
+			   	  <li><a href="https://lvyou.baidu.com/aiji/?from=zhixin">
+			   	  	埃及是一个神秘的国度，埃及金字塔，埃及艳后都给人以一种异域风情，尼罗河养育了这个美丽的国度。如果你想体验
+			   	  神奇的，拥有悠久的古国，埃及绝对是个绝佳之选。</a></li>
+			   	   <li>推荐指数：4颗星<br />
+			   	       旅游价格：20000元起</li>
+			   	</ul>
+			   </li>
+			
+			    <li>
+			   	<ul>樱花日本
+			   	  <li><a href="https://lvyou.baidu.com/riben/?from=zhixin">
+			   	  	日本是一个非常适合游玩的国家，春观夜樱，夏看碧海，秋见红叶，冬踏落雪。日本是一个地势多变、水力资源丰富的国家，
+			   	  由此构成了优美壮丽的景色，那里有山中积雪的湖泊、怪石嶙峋的峡谷、湍急的河流、峻峭的山峰、雄伟的瀑布以及大大小小的温泉。富士山
+			   	  是你不应该错过的活火山，顶部积雪覆盖，山脚树木葱郁。
+			   	  </a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：15000元起</li>
+			   	</ul>
+			   </li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+	
+	<!--
+    	右边的图片轮播
+    -->
+	<div id="page2-right">
+		<img src="img/o7.jpg" id="page2_img" />
+		<div id="page2-right1">
+			<hr />
+			<div id="page2-right11"><h3>意大利</h3></div>
+			<div><img src="img/outside1.jpg" /></div>
+			<div style="float: right;"><img src="img/outside2.jpg" /></div>
+			<p>&nbsp;&nbsp;意大利是一个拥有美丽的自然风光和为数众多的人类文化遗产而被称为美丽的国度，
+			而且意大利是世界上高度发达国家之一，他有着灿烂辉煌的历史，比萨斜塔，水城威尼斯，罗马是它最著名的景点，
+			在历史发展多年来，意大利有着大量的漂亮教堂，醇香的葡萄酒 ，令人流连忘返。 <br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>罗马，比萨斜塔，水城威尼斯</p><br>
+			<p>费用：10000元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right2">
+			<hr />
+			<div id="page2-right11"><h3>浪漫法国</h3></div>
+			<div><img src="img/outside3.jpg" /></div>
+			<div style="float: right;"><img src="img/outside4.jpg" /></div>
+			<p>&nbsp;&nbsp;法国是一个浪漫的国度，国内对于法国也是津津乐道，香榭丽舍是许多人的购物天堂，埃菲尔铁塔更是广为人知，
+				巴黎圣母院大教堂（Cathédrale Notre Dame de Paris）是巴黎最有代表性的历史古迹、观光名胜与宗教场所，哥特式的建筑风格，祭坛、回廊、门窗等处的雕刻和绘画艺术，
+				被看作是古老巴黎的象征。普罗旺斯（Provence）因薰衣草而闻名全球，是著名的薰衣草之乡；又因是中世纪重要文学体裁骑士抒情诗的发源地，所以号称欧洲的“骑士之城”。
+				卢浮宫不仅是法国历史上最悠久的王宫，也是世界上最古老、最大、最著名的博物馆之一，位居世界四大博物馆之首。卢浮宫位于法国巴黎市中心的塞纳河北岸，以其古典主义
+				风格的华丽建筑和数量庞大而价值连城的珍贵藏品为人所知，被认为是世界上最著名、最大的艺术宝库之一。 <br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>香榭丽舍，埃菲尔铁塔，巴黎圣母院，卢浮宫，普罗旺斯</p><br>
+			<p>费用：15000元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right3">
+			<hr />
+			<div id="page2-right11"><h3>英格兰</h3></div>
+			<div><img src="img/outside5.jpg" /></div>
+			<div style="float: right;"><img src="img/outside6.jpg" /></div>
+			<p>&nbsp;&nbsp;这里有卷福，有唐顿庄园，有绅士淑女，有传统的欧式建筑和服饰,在这里，皇室与平民和谐共处，
+				传统文化与现代技术相辅相成，激烈的足球比赛与文艺的戏剧演出互相映衬。喜欢推理小说的朋友不应该
+				错过这里，贝克街22号是一个全世界推理爱好人员心中的圣地，福尔摩斯就在这里诞生。这就是英国。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>伦敦塔桥，伦敦眼，巨石阵，大本钟，爱丁堡，曼切斯顿</p><br>
+			<p>费用：15000元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right4">
+			<hr />
+			<div id="page2-right11"><h3>发达美国</h3></div>
+			<div><img src="img/outside7.jpg" /></div>
+			<div style="float: right;"><img src="img/outside8.jpg" /></div>
+			<p>&nbsp;&nbsp;美国幅员辽阔，地形复杂，东部大西洋沿岸多为平原丘陵，森林资源丰富，湖泊众多，
+				中部的大平原是重要的农牧区，6400公里长的密西西比河纵贯南北，
+				重要的城市有亚特兰大、芝加哥、休斯敦以及新奥尔良等，加州的夏威夷风情，五大湖游览区，尼亚加纳大瀑布，自由女神像，
+				美国绝对是一个好的旅游国家。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>五大湖，纽约，华盛顿，洛杉矶</p><br>
+			<p>&nbsp;费用：10000元起</p>
+			</p>
+		
+		</div>
+	</div>
+	
+	
+	
+	
+</div>
+	     
+	</body>
+</html>

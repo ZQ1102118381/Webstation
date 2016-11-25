@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>美食</title>
+	   <link href="css/demo.css" rel="stylesheet" style="text/css" />
+	</head>
+	<script>
+		var arr=new Array();
+	   arr[0]="img/m7.jpg";
+       arr[1]="img/m1.png";//放图片地址
+       arr[2]="img/m2.jpg";
+       arr[3]="img/m3.jpg";
+       arr[4]="img/m4.jpg";
+       arr[5]="img/m5.jpg";
+       arr[6]="img/m6.jpg";
+       
+       var num = 0;
+       
+       setInterval(turnpic,4000); //每隔4秒转换图片
+       function turnpic(){
+       idsrc=document.getElementById("page2_img");
+          if(num==arr.length-1)
+               num=0;
+          else
+               num+=1;
+         idsrc.src=arr[num];
+}
+	</script>
+	
+	
+<body>
+<div id="container">
+	<div id="page1">
+	 <div id="page1-banner">
+	   <div id="banner-left">
+	     <div id="logo"><h1>About TRAVEL</h1></div>
+	     </div>
+	     <div id="banner-right">
+	     	<ul>
+	         <li><a href="main.html">Home</a></li>
+	         <li><a href="inside.html">国内美景</a></li>
+	         <li><a href="outside.html">国外风光</a></li>
+	         <li><a href="food.html" style="color:#333">食物</a></li>
+	         <li><a href="suggestion.html">个人推荐</a></li>
+	     	</ul>
+	     </div>
+	   </div>
+	</div>
+	
+	<!--
+    	page2
+    -->
+	<div id="page2-left">
+	  <div id="page2-lm">
+		<ul>
+			<li><a href="#page2-right1">酸食</a></li>
+			<li><a href="#page2-right2">甜点</a></li>
+			<li><a href="#page2-right3">辣子</a></li>
+			<li><a href="#page2-right4">烧烤</a></li>
+		</ul>
+		</div>
+		
+		<div id="page2-rm">
+			<h2 align="center">国外热门推荐</h2>
+			<ul>
+			   <li>
+			   	<ul>意式美食
+			   	  <li><a href="http://baike.baidu.com/link?url=-UjRbV2bsO-t4QrLgZgCjIzeffY5FNKTRoIGUBRREX9eyNaMz-eoSedoBf3SI7LCuehN6U_rLVfmfXwDNWHTHdRC-pdCduBnDC-0DmTmPvpSkWX10b5Un0YNrlzxgFGmZLhu9lYmW9J00dMHyEfVYdQt7B77sJIgn3TbgfJbZDijcl-q5rJ9c6h4h8iomMY3K0dHP0WyKVmF3q0FAfVJgBZqt2bT3n4NpvhwiuXFkhW">
+			   	  	意大利的菜肴源自古罗马帝国宫廷，有着浓郁的文艺复兴时代佛罗伦萨的膳食情韵，素称“欧洲大陆烹调之母”。
+			 意大利菜多以海鲜作主料，辅以牛、羊、猪、鱼、鸡、鸭、番茄、黄瓜、萝卜、青椒、大头菜、香葱烹成。制法常用煎、
+			 炒、炸、煮、红烩或红焖，喜加蒜茸和干辣椒，略带小辣，火候一般是六七成熟。这都表现在佛罗伦萨牛排、罗马魔鬼鸡、那不勒斯烤龙虾、巴里甲鱼、
+			 奥斯勃克牛肘肉、扎马格龙沙拉，米列斯特通心粉、青椒焖鸡、烩大虾、烤鱼、火腿切面条等名食之中，四方游客络绎不绝</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	         心动价格：500元起</li>
+			   	</ul>
+			   </li>
+			   
+			    <li>
+			   	<ul>法式甜点
+			   	  <li><a href="http://baike.baidu.com/link?url=6DbucTkJRROiWBRonnANvMlf8MA5d6rhTCFgNeqDaLe6jXiQ2PKYfOnzrWJr3Wo63gOB53pXw9kv8-v67lJIdq">
+			   	  	甜点是大多数女生都不会拒绝的诱惑，而法式甜点更是个中翘楚，甜品代表着甜美和爱情，这和法
+			   	  	国人天性中的浪漫不谋而合，因此法国人对甜品有着一种特殊的偏爱，他们醉心于研究各种甜品，并在其中加入浪漫动人
+			   	  	的元素，琳琅满目的法式甜品闪耀着精致诱人的光彩，让人不禁心向往之。经典的法式甜点有马卡龙、慕斯蛋糕、欧培拉</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	            心动价格：500元起</li>
+			   	</ul>
+			   </li>
+			
+			    <li>
+			   	<ul>和风日食
+			   	  <li><a href="http://baike.baidu.com/link?url=x41dS2F6hpK0wZt4Ltu7idqNWouZFO8KIbp4BlqsowneSgvZ8dXPA4KGeriTjwBgtGGLJn5BKMlcrujugzGIg5L6cjF11OFJXbZgCCbnP2nabhVDfDTu4ADBQGTGFKE3">
+			   	  	日本料理极具观赏性，讲究平静、优雅、和平，所选择的材料是以新鲜的海产品和时令新鲜蔬菜为主，具有口感清淡、
+			   	  加工精细、色泽鲜艳、少油腻等特点。自然原味是日本料理的“杀手锏”，其烹调方式细腻精致，注重味觉、触觉、视觉、
+			   	  嗅觉以及器皿和用餐环境的搭配意境。你可以从它的每一种碟、碗、盘中，领会到独特的“美”“雅”“静”。
+			   	  </a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：500元起</li>
+			   	</ul>
+			   </li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+	
+	<!--
+    	右边的图片轮播
+    -->
+	<div id="page2-right">
+		<img src="img/m7.jpg" id="page2_img" />
+		<div id="page2-right1">
+			<hr />
+			<div id="page2-right11"><h3>酸食</h3></div>
+			<div><img src="img/food1.jpg" /></div>
+			<p>&nbsp;&nbsp; 黔东南是“吃酸”的故乡。日常生活的家宴、宴会、红、白喜事中，酸食无处不有。
+男女老少，都有“嗜酸”的爱好。难怪当地乡谚说“三天不吃酸，走路打捞车”(指走路打趔趄的意思)，道出了黔东南的
+酸食文化的特色功效和风格。在世界“吃在中国”。在中国素有北咸，东南甜，西辣的说法。 白族人民喜吃酸、冷、辣
+等口味 。布朗族喜吃酸笋，酸菜，酸肉之类食物。 独龙族喜吃酸笋、酸菜、酸肉之类食物。 山西人能吃醋，可谓“西酸”
+之首。他们吃饭前，往往先把醋瓶子拿过来，每人喝三调羹醋用以“解馋”。 广西人都爱好吃酸，微带辣椒。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>贵州，山西</p><br>
+			<p>费用：1000元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right2">
+			<hr />
+			<div id="page2-right11"><h3>甜点</h3></div>
+			
+			<div style="float: right;"><img src="img/food2.jpg" /></div>
+			<p>&nbsp;&nbsp;甜食可是广东人的最爱，广东人天天都喜欢吃甜品，甜品多不胜数，闻名四方，各种糖水，各种汤圆，各种糕点，
+				各种双皮奶，糖不甩，绿(红)豆沙(糖，冰)，百合莲子糖水，炖雪梨，炖木瓜，黑芝麻糊，花生糊各种糊，
+				芝士豆腐啊，豆腐花啊，鲜奶窝蛋啊，椰汁窝各种各样窝，莲子冰(各种冰)等等…，说是说不完的，
+				一种甜品种类数不清。在江苏，上海等地方，甜食也是大为受欢迎，喜欢甜食就不要错过这些地方！ <br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>广州，江苏，上海</p><br>
+			<p>费用：1500元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right3">
+			<hr />
+			<div id="page2-right11"><h3>辣子</h3></div>
+			<div><img src="img/food3.jpg" /></div>
+			
+			<p>&nbsp;&nbsp;湖南、湖北、江西、贵州、四川及东北的朝鲜族等地居民多喜辣，无辣不欢。我国流传有“贵州人不怕辣、
+				湖南人辣不怕，四川人怕不辣”之说。贵州人平生所吃辣椒极多，朝天椒、野山椒均不在话下。在川北，
+				听说有一种辣椒本身不能吃，用一根线吊在灶上，汤做好后，辣椒在汤里涮涮，就辣得不得了，因此叫“涮涮辣”，
+				四川的“麻辣烫”要是全国闻名，可以说，没有不辣的四川名吃，四川名吃不辣，也就谈不上“名吃”。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>四川，重庆，湖南，湖北</p><br>
+			<p>费用：1500元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right4">
+			<hr />
+			<div id="page2-right11"><h3>烧烤</h3></div>
+		
+			<div style="float: right;"><img src="img/food4.jpg" /></div>
+			<p>&nbsp;&nbsp;烧烤（BBQ），是一种多人聚会休闲娱乐方式或者是生意。不论在齐齐哈尔还是整个亚洲、美洲和欧洲，
+	烧烤通常是小至家庭，大至学校的集体活动以及一些公司组织的集体活动。国内很多城市都有自己特有的烧烤方式，烤盘、铁板、
+	铁网、长条形炉架，多数都是炭火，地域不同用的碳也是不一样的。论口味来说感觉北方的烧烤比较讲究，配料、腌制、搅拌、
+	都是很有说道的。例如专门为烧烤调配的蘸料，和拌肉类放的孜然，都是非常特殊的。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>随你开心</p><br>
+			<p>费用：100元起</p>
+			</p>
+		
+		</div>
+	</div>
+	
+	
+	
+	
+</div>
+	     
+	</body>
+</html>

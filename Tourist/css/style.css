@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+html,body{
+	font-family:Verdana, Geneva, sans-serif;
+	background:#FFF;
+}
+#container{
+	height:auto;
+	width:auto;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	background-color:#FFF;
+}
+/*page1*/
+#page1{
+	height:700px;
+	width:100%;
+	/*background-color:#999;*/
+	background:url(../img/y1.jpg) no-repeat;
+	background-size:100%;
+}
+
+#page1-banner{
+	width:auto;
+	height:150px;
+	/*background-color:#F99;*/
+}
+#banner-left{
+	margin:0px 60px;
+	width:380px;
+	height:150px;
+	float:left;
+	/*background-color:#9F3;*/
+}
+#logo{
+	margin:50px 10px;
+	font-family:'Courier New', Courier, monospace;
+	font-size:18px;
+	color:#FFF;
+}
+#banner-right{
+	width:800px;
+	height:150px;
+	float:left;
+	margin:0px 20px;
+	display:block;
+	/*background-color:#0CC;*/
+}
+#banner-right ul{
+	list-style:none;
+	margin:0px 20px;
+}
+#banner-right ul li{
+	margin:60px 20px;
+	float:left;
+	color:#FFF;
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#banner-right a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+}
+#banner-right a:hover,a:visited{
+	color:#000;
+}
+#banner-right a::before,
+#banner-right a::after {
+	display: inline-block;
+	opacity: 0;
+	color:#000;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+#banner-right a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+#banner-right a::after {
+	margin-left: 10px;
+	color:#000;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+#banner-right a:hover::before,#banner-right a:hover::after,
+#banner-right a:focus::before,#banner-right a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+#page1-laster{
+	width:100%;
+	height:550px;
+	margin:0px;
+	padding:0px;
+	/*background-color:#0CF;*/
+	float:left;
+}
+
+#page1-center1{
+	height:320px;
+	width:300px;
+	margin:90px 480px;
+	float:left;
+	background-color:rgb(204,204,204);
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+/*page2*/
+#page2{
+	height:650px;
+	width:100%;
+	background-color:#FFF;
+	margin:0px 0px 50px;
+	padding:2px;
+}
+#page2 a{
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#3CC;
+}
+#page2-top{
+	height:480px;
+	width:auto;
+	margin:10px 60px;
+}
+#page2-topimg{
+	margin:20px;
+	padding:2px;
+	float:left;
+}
+#page2-latter{
+	height:120px;
+	width:100%;
+	margin:10px 0px;
+	padding:5px;
+}
+#page2-latter h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:36px;
+	color:#999;
+	text-align:center;
+}
+#page2-latter p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	line-height:30px;/*设置行之间的高度*/
+	color:#333;
+	text-align:center;
+}
+/*page3*/
+#page3{
+	height:350px;
+	width:100%;
+	margin:2px 0px;
+	padding:5px;
+	background:url(../img/blog.jpg) no-repeat;
+	background-size:100%;
+}
+#page3-center{
+	height:260px;
+	width:auto;
+	margin:135px auto;
+}
+#page3-center h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:36px;
+	color:#CCC;
+	text-align:center;
+}
+#page3-center p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:30px;/*设置行之间的高度*/
+	color:#FFF;
+	text-align:center;
+}
+/*page4*/
+#page4{
+	height:800px;
+	width:auto;
+	margin:0px;
+	padding:2px;
+	/*background-color:#000;*/
+}
+#page4-top{
+	height:200px;
+	width:auto;
+	margin:5px 0px 5px;
+	padding:0px;
+	/*background-color:#FFF;*/
+}
+#page4-top-1{
+	height:180px;
+	width:auto;
+	margin:40px auto;
+}
+#page4-top-1 h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:36px;
+	color:#999;
+	text-align:center;
+}
+#page4-top-1 p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:30px;/*设置行之间的高度*/
+	color:#575757;
+	text-align:center;
+}
+#page4-latter{
+	height:530px;
+	margin:5px 100px;
+	/*background-color:#06F;*/
+}
+#page4-latter-half{
+	width:45%;
+	margin:7px 20px 5px 25px;
+	float:left;
+}
+.images{
+	height:350px;
+	width:530px;
+}
+#page4-text{
+	width:530px;
+	margin:5px;
+}
+#page4-text h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:20px;
+	color:#000;
+	text-align:center;
+}
+#page4-text p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:28px;/*设置行之间的高度*/
+	color:#333;
+	text-align:center;
+}
+#page4-text a{
+	text-decoration:none;
+	color:#000;
+}
+#page4-text a:hover,a:visited{
+	color:#999;
+}
+/*page5*/
+#page5{
+	height:450px;
+	width:auto;
+	margin:0px;
+	padding:2px;
+}
+#page5-left{
+	width:40%;
+	margin:7px 20px 5px 100px;
+	float:left;
+}
+#page5-left h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:36px;
+	color:#999;
+	text-align:left;
+}
+#page5-left h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:20px;
+	color:#000;
+	text-align:left;
+}
+#page5-left p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:28px;/*设置行之间的高度*/
+	color:#333;
+	text-align:left;
+}
+#page5-left a{
+	text-decoration:none;
+	color:#000;
+}
+#page5-left a:hover,a:visited{
+	color:#999;
+}
+#page5-right{
+	width:40%;
+	margin:7px 100px 5px 25px;
+	float:left;
+}
+#page5-right h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:36px;
+	color:#999;
+	text-align:left;
+}
+#page5-right h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-stretch:expanded;
+	font-size:20px;
+	color:#000;
+	text-align:left;
+}
+#page5-right p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:28px;/*设置行之间的高度*/
+	color:#333;
+	text-align:left;
+}
+#page5-right a{
+	text-decoration:none;
+	color:#000;
+}
+#page5-right a:hover,a:visited{
+	color:#999;
+}
+.image1{
+	height:110px;
+	width:270px;
+	float:left;
+}
+/*footer*/

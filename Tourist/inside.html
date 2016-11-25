@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>国内美景</title>
+	   <link href="css/demo.css" rel="stylesheet" style="text/css" />
+	</head>
+	<script>
+		var arr=new Array();
+	   arr[0]="img/i7.jpg";
+       arr[1]="img/i1.jpg";//放图片地址
+       arr[2]="img/i2.png";
+       arr[3]="img/i3.jpg";
+       arr[4]="img/i4.jpg";
+       arr[5]="img/i5.jpg";
+       arr[6]="img/i6.jpg";
+       
+       var num=0;
+       
+       setInterval(turnpic,4000); //每隔4秒转换图片
+       function turnpic(){
+       idsrc=document.getElementById("page2_img");
+          if(num==arr.length-1)
+               num=0;
+          else
+               num+=1;
+         idsrc.src=arr[num];
+}
+	</script>
+	
+	
+<body>
+<div id="container">
+	<div id="page1">
+	 <div id="page1-banner">
+	   <div id="banner-left">
+	     <div id="logo"><h1>About TRAVEL</h1></div>
+	     </div>
+	     <div id="banner-right">
+	     	<ul>
+	         <li><a href="main.html">Home</a></li>
+	         <li><a href="inside.html" style="color:#333">国内美景</a></li>
+	         <li><a href="outside.html">国外风光</a></li>
+	         <li><a href="food.html">食物</a></li>
+	         <li><a href="suggestion.html">个人推荐</a></li>
+	     	</ul>
+	     </div>
+	   </div>
+	</div>
+	
+	<!--
+    	page2
+    -->
+	<div id="page2-left">
+	  <div id="page2-lm">
+		<ul>
+			<li><a href="#page2-right1">江南水乡</a></li>
+			<li><a href="#page2-right2">北国冰雪</a></li>
+			<li><a href="#page2-right3">巍峨之山</a></li>
+			<li><a href="#page2-right4">浩渺之水</a></li>
+		</ul>
+		</div>
+		
+		<div id="page2-rm">
+			<h2 align="center">国内热门推荐</h2>
+			<ul>
+			   <li>
+			   	<ul>九寨沟
+			   	  <li><a href="http://baike.baidu.com/link?url=rtQlh5DGNRBVtm0f5sJDRVd09JluD4L_
+			   	  	sPAkZojLS-O9zMe0axI5AxLXrh-_TCJuit1mWlMRMCRRNX9aUmV92OVitpAO_ZuY_tbzmUZNCB5jdsI9k_
+			   	  	FQfxxEvAqE0fSNPdEMXoDlUnnUuOlco5OS8Jafl3U46LPXQ3xjt0ckOt3q-frZzgGSzY_
+			   	  	oBRccybpMEpnnem1n5wPXGMUtSzz6ihj2k3Nlzvc1XCtIgGkNZ6Ii1AQVZksc4QisK9t0ZOS0rH1GjWZRhW4yHt1KXIiUposf7GSxv__
+			   	  	Bo3KEBr3L8UO">世界自然遗产、国家重点风景名胜区、
+			   	  国家AAAAA级旅游景区、国家级自然保护区、国家地质公园、世界生物圈保护区网络，
+			   	  是中国第一个以保护自然风景为主要目的的自然保护区</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：1000元起</li>
+			   	</ul>
+			   </li>
+			   
+			    <li>
+			   	<ul>古城西安
+			   	  <li><a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=2&tn=98012088_3_dg&wd=%E5%8F%A4%E5%9F%8E%E8%A5%BF%E5%AE%89&rsv_spt=1&oq=%E5%B8%86%E8%88%B9%E4%B9%8B%E9%83%BD%E9%9D%92%E5%B2%9B&rsv_pq=be364a9a0000418b&rsv_t=80370tNs3fa3BlPDiMC6Nv12Dji9860nTanMGi%2B2FQsQPLbZtm26SnTGkbQSwi7ZwyTXdg&rqlang=cn&rsv_enter=1&rsv_sug3=7&rsv_sug2=0&inputT=7129&rsv_sug4=7129&rsv_jmp=slow">西安，一座著名的古城，古称长安，与意大利罗马、希腊雅典、埃及开罗并称为世界四大古都。西安拥有
+			   	  7000多年文明史、3100多年建城史、1100多年的建都史，是中国四大古都之一，中华文明和中华民族重要发祥地之一，丝绸之路的起点
+			   	  ，西安是一个有名的美食古城，岐山臊子面 ，肉夹馍，羊肉泡馍，黄桂稠酒。。。来西安，你一定不能错过这里的美食。</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：700元起</li>
+			   	</ul>
+			   </li>
+			
+			    <li>
+			   	<ul>帆船青岛
+			   	  <li><a href="http://baike.baidu.com/link?url=6E0DESSALJ8vXy-i4UVUZQG0smd3LoQz284_uZK_7fNFEna1D5aFguuvXaqrytHMRmnSkyQ2xf4eoSoKQz-Mwq">它海域广阔，海岸线曲折，环境优美、气候宜人，自然条件优越，是最适合开发水上运动的城市之一。
+			   	  青岛是一座悠闲的城市，在这里，你看不到急急忙忙的上班族，只有一片悠闲。青岛被评为最适合养老的城市，海滩，欧式建筑，
+			   	  闲适的生活，青岛是你不容错过的放松时刻。</a></li>
+			   	   <li>推荐指数：5颗星<br />
+			   	       旅游价格：1000元起</li>
+			   	</ul>
+			   </li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+	
+	<!--
+    	右边的图片轮播
+    -->
+	<div id="page2-right">
+		<img src="img/i1.jpg" id="page2_img" />
+		<div id="page2-right1">
+			<hr />
+			<div id="page2-right11"><h3>江南水乡</h3></div>
+			<div><img src="img/y2.jpg" /></div>
+			<div style="float: right;"><img src="img/y4.jpg" /></div>
+			<p>&nbsp;&nbsp;江南的水是最有名的，江南小镇像是浮在水面上一样，整个城镇都笼罩在烟雨朦胧之中。
+			早期的时候，听着乌镇里传来的属于早晨的活力,
+			安逸的慢节奏生活使你远离城市的喧嚣，重归自然，洗涤你的心灵。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>杭州西湖，乌镇，苏堤，白堤,天目湖，太湖湾，苏州园林</p><br>
+			<p>费用：500元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right2">
+			<hr />
+			<div id="page2-right11"><h3>冰雪之国</h3></div>
+			<div><img src="img/inside1.jpg" /></div>
+			<div style="float: right;"><img src="img/inside2.jpg" /></div>
+			<p>&nbsp;&nbsp;"北国风光，千里冰封，万里雪飘"如果你喜欢冰雪，你就不应该错过这个专栏。
+				浪漫的童话小镇，挂满晶莹雪花的雾凇岛，常年冰雪覆盖神秘莫测的长白山，最北端的魅力雪村，
+				冰雪奇缘的冰城--哈尔滨。。。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>雪乡（双峰林场），雾凇岛，长白山，雪村，哈尔滨，伊布，亚布力，呼伦贝尔</p><br>
+			<p>费用：1500元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right3">
+			<hr />
+			<div id="page2-right11"><h3>巍峨之山</h3></div>
+			<div><img src="img/inside3.jpg" /></div>
+			<div style="float: right;"><img src="img/inside4.jpg" /></div>
+			<p>&nbsp;&nbsp;地大物博，区域辽阔，巍峨连绵起伏的山脉在中国并不稀奇，
+				但是，还有一些山脉是值得你去慢慢鉴赏，品玩的。五岳之首的泰山--自然景观雄伟壮丽，历史文化博大精深，
+				梅里雪山--在月光如水的夜里，高洁雄奇的雪峰，直指苍穹，冷艳而超凡脱俗，黄山--黄山集泰山之雄伟、
+				华山之险峻、恒山之烟云、庐山之飞瀑、雁荡之巧石、峨嵋之秀丽于一体，庐山--素有“匡庐奇秀甲天下”之美誉，
+				与鸡公山、北戴河、莫干山并称四大避暑胜地。<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>珠穆朗玛峰中国段，梅里雪山，三神山，泰山，黄山，庐山，乔戈里峰</p><br>
+			<p>费用：1000元起</p>
+			</p>
+		
+		</div>
+		
+		<div id="page2-right4">
+			<hr />
+			<div id="page2-right11"><h3>浩渺之水</h3></div>
+			<div><img src="img/inside5.jpg" /></div>
+			<div style="float: right;"><img src="img/inside6.jpg" /></div>
+			<p>&nbsp;&nbsp;"桂林山水甲天下"中国的水有很多，秀清奇是它的基本特征，桂林的水独具一格，经风化和溶蚀,终于形成了神姿仙态的峰林,
+				幽深瑰丽的溶洞和神秘莫测的地下河.这些特殊的地貌与景象万千的漓江及其周围美丽迷人的田园风光融为一体,
+				形成了独具一格、驰名中外的“山青、水秀、洞奇、石美”的“桂林山水”<br><br>
+			<h2>建议游玩地点:</h2><br>
+			<p>桂林</p><br>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费用：1000元起</p>
+			</p>
+		
+		</div>
+	</div>
+	
+	
+	
+	
+</div>
+	     
+	</body>
+</html>

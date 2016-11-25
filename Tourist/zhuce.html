@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="keyword1,keyword2,keyword3">
+   <meta name="description" content="this is my page">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>表单的css设计</title>
+   <script language="JavaScript" src="js/jquery.js"></script> 
+  <link rel="stylesheet" href="css/zhuce.css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="top">个人信息注册表单界面</div>
+    <form>
+       <fieldset>
+          <legend>注册基本信息</legend>
+         <table border="0" cellspacing="5" cellpadding="5" class="tb">
+          <tr>
+            <td class="left">用户名</td>
+            <td><input type="text" class="txt1" size="15" id="ID"/></td>
+          </tr>
+          <tr>
+            <td class="left">密&nbsp;&nbsp;码</td>
+            <td><input type="text" class="txt1" size="15" id="password"/></td>
+          </tr>
+         </table>
+       </fieldset>
+       <fieldset>
+          <legend>个人详细资料</legend>
+          <table border="0" cellspacing="5" cellpadding="5" class="tb">
+          	<tr>
+             <td class="left">出生日期</td>
+             <td><input type="text" size="4" class="txt1" />年<input type="text" size="2" class="txt1" />月
+             <input type="text" size="2" class="txt1" />日</td>
+           </tr>
+           <tr>
+               <td class="left">喜好的美食</td>
+               <td>
+               <select>
+                 <option value="中国食物" selected="selected" class="green">中国食物</option>
+                 <option value="意大利西餐" >意大利西餐</option>
+                 <option value="法式甜点" class="green">法式甜点</option>
+                 <option value="和风日食">和风日食</option> 
+                </select>
+                </td>
+             </tr>
+              <tr>
+               <td class="left">业余爱好</td>
+               <td>
+               <select>
+                 <option value="听音乐" selected="selected" class="green">听音乐</option>
+                 <option value="玩游戏" >玩游戏</option>
+                 <option value="上网" class="green">上网</option>
+                 <option value="体育运动">体育运动</option> 
+                </select>
+                </td>
+             </tr>
+             <tr>
+               <td colspan="2">服务条款</td>
+             </tr>
+             <tr>
+               <td colspan="2">
+                 <textarea cols="55" rows="5" readonly="readonly">尊敬的客户，欢迎您注册并使用服务。在注册及使用前，请您仔细阅读以下条款： 用户名由6位数字，字母符号组成，不可重复，重复的请重新注册，不允许中文出现。密码随意。
+                 </textarea>
+                </td>
+               </tr>
+               </table>
+              </fieldset>
+         <div id="botton"><input type="button" value="注册" class="btn" onclick="login()"/>
+                          <input type="reset" value="重设" class="btn" />
+         </div>
+         </form>
+
+                
+</div>
+
+ <script>
+    	function login(){
+    		var id = $("#ID").val();
+    		var password = $("#password").val();
+    		
+    	
+    		$.ajax({
+	    		type:"post",
+	    		url:"php/zhuce.php",
+	    		async:true,
+	    		dataType:'json',
+	    		data:{
+	    			    'id':id,
+	    					'password':password,
+	    		},
+	    		success:function(data){
+	    			
+	    			if(data.statue == 1){
+	    				alert("注册成功");
+	    				window.location.href = "suggestion.html";
+	    			}if(data.statue == -1){
+	    				alert("用户名重复");
+	    			}if(data.statue == -2 && data.statue == -3){
+	    				alert("注册失败");
+	    			}
+	    			
+	    		}
+	    	});
+    	}
+    </script>
+
+
+</body>
+</html>

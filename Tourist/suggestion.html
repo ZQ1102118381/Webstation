@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="keyword1,keyword2,keyword3">
+        <meta name="description" content="this is my page">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>个人推荐</title>
+	   <link href="css/suggestions.css" rel="stylesheet" style="text/css" />
+	   <script language="JavaScript" src="js/jquery.js"></script> 
+	</head>
+	
+<body>
+<div id="container">
+	<div id="page1">
+	 <div id="page1-banner">
+	   <div id="banner-left">
+	     <div id="logo"><h1>About TRAVEL</h1></div>
+	     </div>
+	     <div id="banner-right">
+	     	<ul>
+	         <li><a href="main.html">Home</a></li>
+	         <li><a href="inside.html">国内美景</a></li>
+	         <li><a href="outside.html">国外风光</a></li>
+	         <li><a href="food.html">食物</a></li>
+	         <li><a href="suggestion.html" style="color:#333">个人推荐</a></li>
+	     	</ul>
+	     </div>
+	   </div>
+	</div>
+	
+	
+	<div id="page2-left">
+		
+	 <form>
+       <fieldset>
+       <legend>个人信息登录注册界面</legend>
+       <table>
+       <tr>
+          <td class="left">用户名</td>
+          <td><input type="text" class="txt" size="12" id="ID" name="ID" value="您的用户名"/></td>
+         </tr> 
+          <tr>
+           <td class="left">密&nbsp;码</td>
+           <td><input type="password" size="16" class="txt" id="password" name="password" value="您的密码"/></td>
+         </tr>
+          </table>
+          </fieldset>
+          
+          <div id="botton">
+         <input type="button" value="登录"  class="btn" onclick ="login1()"/>
+         <input type="button" value="注册"  class="btn" onclick="zhuce()"/>
+          </div>
+   </form>      
+	<hr />
+	<div id="page3-lf">
+		<h2>欢迎你 ，亲爱的用户！</h2>
+		<h2>登录后才能发布您的旅游心得</h2>
+	
+	</div>
+	</div>
+	
+	<div id="page2-right">
+		<form>
+		<!--<div id="botton">
+		<input type="button"  class="btn" value="刷新" onclick="shows()" />
+	    </div>-->
+         <table id="table" border="1"  cellspacing="3" width="800px">
+ 	 	<thead>
+ 	 		<tr>
+ 	 			<td>用户</td>
+ 	 			<td>题目</td>
+ 	 			<td>内容</td>
+ 	 		</tr>
+ 	 		
+ 	 	</thead>
+ 	 	<tbody id="tbody">
+ 	 		
+ 	 	</tbody>
+ 	 	
+ 	 </table>
+   </form>
+	</div>
+	
+</div>	
+
+<script>
+	  function login1(){
+    		var id = $("#ID").val();
+    		var password = $("#password").val();
+    		
+    		$.ajax({
+	    		type:"post",
+	    		url:"php/login.php",
+	    		async:true,
+	    		dataType:'json',
+	    		data:{
+	    			        'id':id,
+	    					'password':password
+	    		},
+	    		success:function(data){
+	    		
+	    			if(data.statue == 1){
+	    				alert("登录成功");
+	    				window.location.href = "suggestion1.php";
+	    			}else{
+	    				alert("登录失败");
+	    			}
+	    			
+	    		}
+	    	});
+	  }
+	  
+	  function zhuce(){
+	  	window.location.href = "zhuce.html";
+	  }
+	  
+	  $(document).ready(function(){
+	  	
+	  	var tb = document.getElementById('table');
+	  	var rowNum = tb.rows.length;
+	  	for(i = 0;i<rowNum;i++){
+	  		tb.deleteRow(i);
+	  		rowNum = rowNum - 1;
+	  		i = i-1;
+	  	}
+	  	
+	    	$.ajax({
+     	        type:"post",
+	    		url:"php/s3.php",
+	    		async:true,
+	    		dataType:'json',
+	    		data:{      
+	    			     
+	    		},
+	    	success:function(data){
+	    		console.log(data);
+	    		if(data.length == undefined){
+    				var str = "<tr><td>"+data['ID']+"</td><td>"+data['Title']+"</td><td>"+data['Content']+"</td></tr>";
+    				$("#tbody").append(str);
+    			}else{
+    				for(var i=0;i<data.length;i++){
+	    			var str = "<tr><td>"+data[i]['ID']+"</td><td>"+data[i]['Title']+"</td><td>"+data[i]['Content']+"</td></tr>";
+	    			$("#tbody").append(str);
+	    			}
+    			}
+    		 }
+    		});
+      });
+</script>
+
+</body>
+</html>

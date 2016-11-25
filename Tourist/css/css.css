@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+   *{
+	  margin:0;padding:0;list-style-type:none;
+	  }
+   a,img{
+	   border:0;
+	   }
+    body{
+		font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+		}
+/**基本格式开始***************/
+
+     .teacherPic{
+		 width:1400px;
+		 height:620px;
+		 background:url(../img/01.jpg) no-repeat;
+		 background-size: 1400px 620px;
+		 margin:10px auto 0 auto;
+		 }
+      .teacherPic .content{
+		  width:280px;
+		  height:620px;
+		  float:left;
+		  position:relative;
+		  overflow:hidden;
+		  }
+      .teacherPic .content .txt{
+		  width:256px;
+		  height:200px;
+		  background:rgba(18,21,44,0.5);
+		  position:absolute;
+		  left:0px;
+		  bottom:0px;
+		  padding:0 12px;
+		  border-top:2px solid #FFE000;
+		  font-family:"微软雅黑";
+		  font-size: 12px;
+		  }
+         .teacherPic .content .txt h3{
+			 color:#575F96;
+			 font-size:24px;
+			 font-weight:100;
+			 margin:10px 0 6px 0;
+			 }
+        .teacherPic h4{
+			color:#fff;
+			font-size:12px;
+			font-weight:100;
+			height: 40px;
+			}
+         .teacherPic .content .txt p{
+			 color:#fff;
+			 margin-top:15px;
+			 padding-top:5px;
+			 border-top:1px solid #575F96;
+			 font-family:"微软雅黑";
+			 display:none;
+			 }
+          .teacherPic .content .txt a{
+          	color:#06b9d1;
+          	font-size: 16px;
+          	font-weight: 100;
+          	height: 30px;
+          	text-decoration: none;
+          }

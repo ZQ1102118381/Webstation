@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>图片自动转动</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/js.js" ></script>
+		<!--这是li形成的，用$("#demo1 li:eq("+n+")").show();-->
+		 <script>
+          $(document).ready(function(){
+          	//点击相应的button出现相应的图片
+	        $(".bottom1 a").click(function(){
+		         var n = $(".bottom1 a").index(this);
+		         $("#demo1 li").hide();
+		         $("#demo1 li:eq("+n+")").show();
+  
+		          if(n>2){
+       	    	    n=0;
+	       	      }else{
+	       	    	n++;
+	       	    }
+	          });
+	          //前进
+	           var t = $("#demo1 li").index(this);
+	          $("#preview").click(function(){
+	          	   
+	          	   if(t<1){
+       	    	      t=3;
+	       	       }else{
+	       	    	 t--;
+	       	    }
+	       	     $("#demo1 li").hide();
+	       	    
+		         $("#demo1 li:eq("+t+")").show();
+	          });
+	          //后退
+	          $("#next").click(function(){
+	          	   if(t>2){
+       	    	      t=0;
+	       	       }else{
+	       	    	 t++;
+	       	    }
+	       	     $("#demo1 li").hide();
+		         $("#demo1 li:eq("+t+")").show();
+	          });
+	          setInterval(function(){
+	          	   if(t>2){
+       	    	      t=0;
+	       	       }else{
+	       	    	 t++;
+	       	    }
+	       	     $("#demo1 li").hide();
+		         $("#demo1 li:eq("+t+")").show();
+	          },3000);
+	          })
+         </script>
+	</head>
+	<body>
+		
+	<div id="demo1" class="webwidget_slideshow_dot">
+     <ul>
+    <li id="i0"><a href="link1" title="Sky"><img src="img/slideshow_large_1.jpg" width="407" height="301" alt="slideshow_large"/></a></li>
+    <li id="i1"><a href="link2" title="Sea"><img src="img/slideshow_large_2.jpg" width="407" height="301" alt="slideshow_large"/></a></li>
+    <li id="i2"><a href="link3" title="Flower"><img src="img/slideshow_large_3.jpg" width="407" height="301" alt="slideshow_large"/></a></li>
+    <li id="i3"><a href="link4" title="Treelink4"><img src="img/slideshow_large_4.jpg" width="407" height="301" alt="slideshow_large"/></a></li>
+    </ul>
+   </div>
+   
+   <div class="bottom1">
+     	<img src="img/carousel_back_hoverhit.png" id="preview" style="cursor: pointer;" id="preview">
+   		<a id="map0" style="cursor: pointer"><img src="img/carousel_circle_hoverhit.png"></a>
+   		<a id="map1" style="cursor: pointer"><img src="img/carousel_circle_hoverhit.png"></a>
+   		<a id="map2" style="cursor: pointer"><img src="img/carousel_circle_hoverhit.png"></a>
+   		<a id="map3" style="cursor: pointer"><img src="img/carousel_circle_hoverhit.png"></a>
+   		<img src="img/carousel_next_hoverhit.png" style="cursor: pointer" id="next"/>
+   	<!--<ul>
+   		<a href="#map1"><li></li></a>
+   		<a href="#map2"><li></li></a>
+   		<a href="#map3"><li></li></a>
+   		<a href="#map4"><li></li></a>
+   	</ul>-->
+
+   </div>
+	</body>
+</html>

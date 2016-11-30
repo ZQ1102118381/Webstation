@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的周刊</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<script src="js/jquery.js"></script>
+		<script>
+		$(function(){
+			$(".container>div").hide();
+	        $(".container>div:eq(0)").show();	
+	        $(".navContent a").click(function(){
+		         var n = $(".navContent a").index(this);
+//		         $(".navContent a").index(this);
+		         $(".container>div").hide();
+		         $(".container>div:eq("+n+")").show();	
+	          })
+	        
+	   })
+		</script>
+</head>
+<body>
+
+<div class="mainContainer">
+	<div class="navContent">
+		<a class="logo" href="#"><img src="img/少司命.jpeg" alt="Home"></a>
+		<a class="logo book fonts" href="#">微刊</a>
+		<a class="logo box fonts" href="#">联系</a>
+		<a class="logo box01 fonts" href="#">Works</a>
+		<a class="logo contact fonts" href="#">福利</a>
+	</div>
+	
+	<div class="container">
+		<div class="firstInfo">
+			<div class="first1">
+				<p><span class="title1">WELCOME TO MY PAGE!</span></p>
+				<p><span style="color: #000000; font-size: 22px;">&nbsp;&nbsp;在这里，你可以找到你所喜欢的东西：动物，美人，风景...欢迎访问我的个人刊物！</span></p>
+				<div class="message">
+					<p class="message-common message1"><img src="img/狐狸先生1.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+					<p class="message-common message2"><img src="img/兔子小姐1.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+					<p class="message-common message3"><img src="img/白狐1.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+					<p class="message-common message3"><img src="img/白狐2.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+					<p class="message-common message1"><img src="img/兔子小姐2.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+					<p class="message-common message2"><img src="img/狐狸先生2.jpeg">你喜欢小动物吗？<br />
+					小小的，毛毛的.当它打滚卖萌的时候，感觉自己都要萌化了.欢迎您进入<a href="#" style="text-decoration: none;color: #FF2300;">动物的世界</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="secondInfo">
+			<div class="second2">
+			<p class="title1" style="color: #FFFFFF;">	What can we do?</p>
+			<span>&nbsp;&nbsp;我们提供了很多不同方面的周刊，你可以了解到多个方面的内容，包括动物，养身，健康，潮流，美食，旅游，美妆等等，想你所想。</span>
+			<span>&nbsp;如果您对我的主页感兴趣，欢迎通过多个渠道进行订阅。</span>
+			<div class="second-photo">
+				<ul>
+					<li><img src="img/logo_5.png"><span>关注我<br>微信查询<br>wodezhoukan</span></li>
+					<li><img src="img/logo_6.png"><span>点击右上角<br>查询历史消息<br>获得咨询</span></li>
+					<li><img src="img/logo_7.png"><span>关注投稿<br>发送E-mail至<br>wodezhoukan@163.com</span></li>
+					<li><img src="img/logo_8.png"><span>加入我们<br>招聘会<br>wodezhoukan</span></li>
+				</ul>
+			</div>
+		    </div>
+		</div>
+		 
+		 <div class="thirdInfo">
+		 	<div class="third-left">
+		     <p class="address">wodeworks工作室<br />
+		     	地址：北京<br>
+			简历及作品发送至：<br>
+			zuoyouzhaopin@126.com<br>
+			如果你方便也请一并告诉我们你的<br>
+			blog、微博、insta、知乎等账户。</p>
+		    </div>
+		    <div class="third-right">
+		    	<img src="img/map.png"/>
+		    </div>
+		 </div>
+		 	
+		 <div class="fourInfo">
+		 	<div class="four-left">
+		 		<p style="font-size: 28px;">陌生人&nbsp;|&nbsp;比编剧更厉害的是生活</p>
+		 		<!--<img src="img/banner_6.png" />-->
+		 	</div>
+		 	<div class="blue"><img src="img/banner_6.png" />
+		 	<div class="four-right">
+		 	<span>地铁站外，公交站前，<br>
+		 	忙碌一天的人们，<br>
+			日复一日的画面，<br>看似每个人都活着同样的轨迹，<br>
+			可每个人在那些角落发生的故事，<br>
+			却有着比影视剧还精彩的桥段。<br>
+			别以为编剧厉害，<br>生活比什么都厉害。<br>
+			（旁观者：二师兄）</span><br />
+			<p>左右的陌生人|旁观者的镜头，<br>旁观者的想。</p>
+		 	</div>
+		 	</div>
+		 </div>
+		 
+		 <div class="lastInfo">
+		 	<div class="last-left">
+		 		<p style="font-size: 28px;">爱上一座城市，爱上一本周刊</p>
+		 		<!--<img src="img/banner_6.png" />-->
+		 	</div>
+		 	<div class="red"><img src="img/banner_1.png"/><img src="img/banner_2.png" /><img src="img/banner_3.png" />
+		 	<div class="last-foot"><span><br /><br/ >如果您想加入我们，记得要向我们投递您的相关简历，<h3>myworks</h3>欢迎您的加入！</span></div>
+		 	</div>
+		 </div>
+	</div>
+	
+	
+	
+	
+</div>
+</body>
+</html>

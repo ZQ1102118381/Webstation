@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片自动轮播</title>
+		<style>
+	 *{
+		 margin: 0;
+		 padding: 0;
+		}
+	ul{
+		 list-style: none;
+		}
+	.slideShow{
+		 width: 346px;
+		 height: 210px;  /*其实就是图片的高度*/
+		 border: 1px #eeeeee solid;
+		 margin: 100px auto;
+		 position: relative;
+		 overflow: hidden; /*此处需要将溢出框架的图片部分隐藏*/
+	}
+   .slideShow ul{
+		 width: 2000px;
+		 position: relative;  /*此处需注意relative : 对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置，如果没有这个属性，图片将不可左右移动*/
+	}
+   .slideShow ul li{
+		 float: left;  /*让四张图片左浮动，形成并排的横着布局，方便点击按钮时的左移动*/
+		 width: 346px;
+		}
+	.slideShow img{
+		width: 346px;
+		height: 210px;  /*其实就是图片的高度*/
+		border: 0px;
+	}
+    .slideShow .showNav{  /*用绝对定位给数字按钮进行布局*/
+		 position: absolute;
+		 right: 10px;
+		 bottom: 5px;
+		 text-align:center;
+		 font-size: 12px; 
+		 line-height: 20px;
+		}
+	.slideShow .showNav span{
+		 cursor: pointer;
+		 display: block;
+		 float: left;
+		 width: 20px;
+		 height: 20px;
+		 background: #ff5a28;
+		 margin-left: 2px;
+		 color: #fff;
+		}
+	.slideShow .showNav .active{
+		 background: #b63e1a;
+		}
+		</style>
+		<script>
+  	   $(document).ready(function(){
+  	   	var sliderShow = $(".slideShow"),
+  	   	ul = sliderShow.find("ul"),
+  	   	showNumber = sliderShow.find(".showNav span"),
+  	   	oneWidth = sliderShow.find("ul li").eq(0).width();
+  	   	var timer = null;
+  	   	var iNow = 0;
+  	   	
+  	   	showNumber.on("click",function(){
+  	   		$(this).addClass("active").siblings().removeClass("active");
+  	   		var index = $(this).index();
+  	   		iNow = index;
+  	   		ul.animated({
+  	   			"left":-oneWidth*iNow,
+  	   		})
+  	   	});
+  	   	timer = setInterval(function(){
+  	   		iNow++;
+  	   		if(iNow>showNumber.length-1){
+  	   			iNow = 0;
+  	   		}
+  	   		showNumber.eq(iNow).trigger("click");
+  	   	},2000);
+  	   })
+  </script>
+	</head>
+	<body>
+	<div class="slideShow">
+   <!--图片布局开始-->
+    <ul>
+       <li><a href="#"><img src="img/slideshow_large_1.jpg" /></a></li>
+        <li><a href="#"><img src="img/slideshow_large_2.jpg" /></a></li>
+	    <li><a href="#"><img src="img/slideshow_large_3.jpg" /></a></li>
+	    <li><a href="#"><img src="img/slideshow_large_4.jpg" /></a></li>
+   </ul>
+   <!--图片布局结束-->
+    
+   <!--按钮布局开始-->
+   <div class="showNav">
+         <span class="active">1</span>
+	     <span>2</span>
+	     <span>3</span>
+	     <span>4</span>
+   </div>
+   <!--按钮布局结束-->
+  </div>
+  <script src="js/jquery.js"></script>
+
+</body>
+</html>

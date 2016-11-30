@@ -1,0 +1,282 @@
+*{
+	margin: 0px;
+}
+body{
+	background: url(../img/bg.png) no-repeat;
+}
+
+p,span{
+	font-size: 14px;
+	display: block;
+}
+.mainContainer {
+		width: 1200px;
+		margin: 80px auto;
+		overflow: hidden;
+		background-color: #FFF;
+	    }
+.navContent {
+		float: left;
+		width: 200px;
+}
+ .logo {
+	height: 100px;
+}
+.fonts{
+	font-family: "franklin gothic demi" "blackadder itc";
+	font-size: 28px;
+	color: #FFFFFF;
+	padding-top: 58px;
+}
+.logo img{
+	width: 200px;
+	height: 122px;
+	display: block;
+}
+.book {
+	padding-left: 83px;
+	padding-right: 44px;
+	display: block;
+	background-color: #78bcaf;
+	background-image: url(../img/logo_2.png);
+	background-repeat: no-repeat;
+	background-position: 25px center;
+}
+     
+.box {
+	padding-left: 83px;
+	padding-right: 44px;
+	display: block;
+	background-color: #adca7a;
+	background-image: url(../img/logo_4.png);
+	background-repeat: no-repeat;
+	background-position: 25px center;
+}
+.box01 {
+	padding-left: 83px;
+	padding-right: 44px;
+	display: block;
+	background-color: #67affb;
+	background-image: url(../img/logo_3.png);
+	background-repeat: no-repeat;
+	background-position: 25px center;
+}
+.contact {
+	padding-left: 83px;
+	padding-right: 44px;
+	display: block;
+	background-color: #f87678;
+	background-image: url(../img/logo_1.png);
+	background-repeat: no-repeat;
+	background-position: 25px center;
+}
+a{
+   text-decoration: none;
+   display: block;
+}
+
+
+/*右边*/
+
+.firstInfo {
+	width: 1000px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+	height: 732px;
+	background-color: #FFFFFF;
+}
+
+.first1{
+	margin-left: 30px;
+	padding-left: 30px;
+	line-height: 70px;
+}
+.title1{
+	width: 600px;
+	color: #ff2300;
+	font-family: Lobster, Monospace;
+    font-size: 30px;
+    text-align: center;
+}
+.message{
+	margin-top: 5px;
+}
+.message-common{
+	float: left;
+	line-height: 40px;
+}
+.message1{
+	width: 280px;
+	height: 240px;
+	background-color: #d6ebe7;
+}
+.message2{
+	width: 280px;
+	height: 240px;
+	background-color: #e6efd7;
+}
+.message3{
+	width: 280px;
+	height: 240px;
+	background-color: #fdd6d6;
+}
+
+.message img{
+	width: 140px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+/*第二块地方*/
+.secondInfo {
+	width: 1000px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+	height: 732px;
+	background-color: #78bcaf;
+}
+.secondInfo span{
+	font-family: Monospace;
+	font-size: 20px;
+	display: block;
+	color: #FFFFFF;
+}
+.second2{
+	margin-left: 30px;
+	padding-left: 30px;
+	line-height: 70px;
+}
+.second-photo{
+	padding-top: 30px;
+	margin-top: 30px;
+}
+.second-photo ul{
+	list-style: none;
+}
+.second-photo ul li{
+	float: left;
+	margin: 15px;
+	padding: 10px;
+}
+.second-photo span{
+	line-height: 40px;
+	color: #FFFFFF;
+	text-align: center;
+}
+/*第三块地方*/
+.thirdInfo {
+	width: 1000px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+	height: 732px;
+	background-color: #adca7a;
+}
+.third-left{
+	width: 440px;
+	height: 400px;
+	float: left;
+}
+.address{
+	margin: 150px 50px;
+	padding: 50px 10px;
+	font-size: 28px;
+	font-family: "franklin gothic demi cond";
+	color: #FFFFFF;
+}
+.third-right{
+	float: left;
+	margin-right: 0px;
+	background-color: #67AFFB;
+}
+.third-right img{
+	width: 560px;
+	height: 732px;
+	border: 0;
+	display: block;
+}
+/*第四块地方*/
+.fourInfo {
+	width: 1000px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+	height: 732px;
+	/*background-color: #67affb;*/
+	background-color: #FFFFFF;
+}
+.four-left{
+	padding-top: 80px;
+	padding-left: 80px;
+	height: 335px;
+}
+.four-left p{
+	margin-bottom: 310px;
+}
+
+.blue {
+	background-color: #67affb;
+	height: 320px;
+	position: relative;
+}
+.blue img {
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 80px;
+}
+.four-right{
+	position: absolute;
+	top: -280px;
+	right: 5px;
+	padding-left: 80px;
+}
+.four-right span{
+	font-size: 18px;
+}
+.four-right p{
+	font-size: 24px;
+}
+/*第五块地方*/
+.lastInfo {
+	width: 1000px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+	height: 732px;
+	background-color: #FFFFFF;
+}
+.last-left{
+	padding-top: 80px;
+	padding-left: 80px;
+	height: 200px;
+	margin-bottom: 80px;
+}
+.red {
+	background-color: #f87678;
+	height: 400px;
+	position: relative;
+}
+.red img{
+	margin-top: -70px;
+	margin-left: 80px;
+	float: left;
+	display: block;
+}
+.red span{
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.red h3{
+	font-family: Lobster, Monospace;
+	color: #67AFFB;
+}
+.last-foot{
+	display: block;
+	width: 500px;
+	margin-left: 160px;
+	margin-top: 80px;
+	padding-bottom: 80px;
+}
